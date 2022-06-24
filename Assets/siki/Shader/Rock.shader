@@ -56,7 +56,7 @@ Shader "TAR/Rock"
             fixed3 normalDir=normalize(f.temp);
             fixed3 lightDir=normalize(_WorldSpaceLightPos0.xyz);//对于每个顶点来说,管的位置就是就是方向,因为光是平行光
             // fixed3 texcolor=tex2D(_Tex,f.UV.xy)*_Color.rgb;
-                 _Color=fixed4(1,1,1,0);       
+                 //_Color=fixed4(1,1,1,0);       
 
             #if defined (_branch1)
             _Color=fixed4(0,1,0,0);            
